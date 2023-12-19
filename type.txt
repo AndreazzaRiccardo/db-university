@@ -1,0 +1,33 @@
+dipartimenti
+id - PK - INT
+tipologia - VARCHAR(255) - NOTNULL
+sede - VARCHAR(255) - NOTNULL
+
+corsi di laurea
+id - PK - INT
+nome - VARCHAR(255) - NOTNULL
+durata_anni - TINYINT - NOTNULL
+
+corsi
+id - PK - INT
+nome - VARCHAR(255) - NOTNULL
+cfu - TINYINT - NOTNULL
+aula - VARCHAR(255)
+
+insegnanti
+id - PK - INT
+nome - VARCHAR(255) - NOTNULL
+cognome - VARCHAR(255) - NOTNULL
+email - VARCHAR(255) - NOTNULL
+telefono - VARCHAR(255) - NOTNULL
+
+appelli esami
+id - PK - INT
+data - DATETIME - NOTNULL
+aula - VARCHAR(255) - NOTNULL
+
+studenti
+id - PK - INT
+nome - VARCHAR(255) - NOTNULL
+cognome - VARCHAR(255) - NOTNULL
+telefono - VARCHAR(255) - NOTNULL
